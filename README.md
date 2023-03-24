@@ -1,4 +1,11 @@
-# youtube-dl-rs
+# youtube-dl-rs-pyo3
+
+## Differences from upstream
+
+This fork embeds python to run yt-dlp. This makes subsequent runs a lot faster.
+However it is incompatible with the downloader feature, which makes this not upstreamable.
+
+## Original README
 
 [<img alt="Crates.io" src="https://img.shields.io/crates/v/youtube_dl">](https://crates.io/crates/youtube_dl)
 
