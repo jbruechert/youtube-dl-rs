@@ -635,7 +635,7 @@ impl YoutubeDl {
 
     fn internal_run(url: &str, download: bool, debug: bool, args: &[&str]) -> Result<YoutubeDlOutput, Error> {
         let json = Python::with_gil(|py| -> PyResult<String> {
-            let locals = PyDict::new_bound(py);
+            let locals = PyDict::new(py);
             locals.set_item("options", args)?;
             locals.set_item("url", url)?;
             locals.set_item("should_download", download)?;
